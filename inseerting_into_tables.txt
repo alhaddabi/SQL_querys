@@ -1,0 +1,36 @@
+INSERT INTO Department (dep_id, dep_name, dep_HOD, tec_id)
+VALUES (1, 'Computer Science', 'Jane Doe', 101),
+       (2, 'Mathematics', 'John Doe', 102),
+       (3, 'Physics', 'Jane Smith', 103),
+       (4, 'Chemistry', 'John Smith', 104),
+       (5, 'Biology', 'Jane Brown', 105),
+       (6, 'History', 'John Brown', 106),
+       (7, 'Geography', 'Jane Wilson', 107);
+
+INSERT INTO teacher (tec_id, tec_name, tec_phonenumber, tec_email, tec_gender, tec_major, tec_salary)
+VALUES (102, 'John Doe', 234, 'john.doe@email.com', 'Male', 'Mathematics', 750),
+       (103, 'Jane Smith', 345, 'jane.smith@email.com', 'Female', 'Physics', 770),
+       (104, 'John Smith', 456, 'john.smith@email.com', 'Male', 'Chemistry', 720),
+       (105, 'Jane Brown', 567, 'jane.brown@email.com', 'Female', 'Biology', 780),
+       (106, 'John Brown', 675, 'john.brown@email.com', 'Male', 'History', 700),
+       (107, 'Jane Wilson', 789, 'jane.wilson@email.com', 'Female', 'Geography', 800);
+
+
+INSERT INTO course (cou_id, cou_name)
+VALUES (1, 'Computer Science'),
+       (2, 'Mathematics'),
+       (3, 'Physics'),
+       (4, 'Chemistry'),
+       (5, 'Biology'),
+       (6, 'History'),
+       (7, 'Geography');
+
+INSERT INTO student (stu_id, stu_name, stu_gender, stu_phonenumber, stu_email, stu_joinDate, stu_GPA, cou_id)
+VALUES (1, 'Jane Doe', 'Female', 123, 'jane.doe@email.com', '2021-01-01', 3.50, 1),
+       (2, 'John Doe', 'Male', 234, 'john.doe@email.com', '2021-02-01', 3.75, 2),
+       (3, 'Jane Smith', 'Female', 345, 'jane.smith@email.com', '2021-03-01', 3.60, 3),
+       (4, 'John Smith', 'Male', 456, 'john.smith@email.com', '2021-04-01', 3.80, 4),
+       (5, 'Jane Brown', 'Female', 567, 'jane.brown@email.com', '2021-05-01', 3.70, 5),
+       (6, 'John Brown', 'Male', 678, 'john.brown@email.com', '2021-06-01', 3.90, 6),
+       (7, 'Jane Wilson', 'Female', 789, 'jane.wilson@email.com', '2021-07-01', 3.65, 7);
+
